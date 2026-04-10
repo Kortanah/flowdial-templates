@@ -1,25 +1,40 @@
 [
   {
-    "name": "\ud83c\uddec\ud83c\udded MTN Mobile Money",
-    "ussdCode": "*170#",
-    "steps": [
+    "name": "MTN Mobile Money Transfer",
+    "ussdCode": "*170#","steps": [
       {
-        "position": 1,
+        "position": 0,
         "type": "AUTO",
         "actionValue": "1",
         "matchText": "Transfer Money"
+      },
+      {
+        "position": 1,
+        "type": "INPUT",
+        "variableKey": "recipient_number",
+        "matchText": "Enter Recipient Number"
       },
       {
         "position": 2,
         "type": "INPUT",
         "variableKey": "amount",
         "matchText": "Enter Amount"
+      },
+      {
+        "position": 3,
+        "type": "MANUAL",
+        "matchText": "Enter Secret PIN to Confirm"
       }
     ],
     "variables": [
       {
+        "key": "recipient_number",
+        "label": "Who are you sending to?",
+        "inputType": "PHONE"
+      },
+      {
         "key": "amount",
-        "label": "How much to send?",
+        "label": "How much (GHS)?",
         "inputType": "NUMBER"
       }
     ]
