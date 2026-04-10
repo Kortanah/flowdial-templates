@@ -12,7 +12,7 @@
         "position": 1,
         "type": "INPUT",
         "variableKey": "recipient_number",
-        "matchText": "Enter Recipient Number"
+        "matchText": "Enter Number"
       },
       {
         "position": 2,
@@ -29,7 +29,7 @@
     "variables": [
       {
         "key": "recipient_number",
-        "label": "Who are you sending to?",
+        "label": "Who are you?",
         "inputType": "PHONE"
       },
       {
