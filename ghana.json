@@ -1,0 +1,27 @@
+[
+  {
+    "name": "MTN Mobile Money",
+    "ussdCode": "*170#",
+    "steps": [
+      {
+        "position": 1,
+        "type": "AUTO",
+        "actionValue": "1",
+        "matchText": "Transfer Money"
+      },
+      {
+        "position": 2,
+        "type": "INPUT",
+        "variableKey": "amount",
+        "matchText": "Enter Amount"
+      }
+    ],
+    "variables": [
+      {
+        "key": "amount",
+        "label": "How much to send?",
+        "inputType": "NUMBER"
+      }
+    ]
+  }
+]
