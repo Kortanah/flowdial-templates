@@ -1,6 +1,6 @@
 [
   {
-    "name": "MTN Mobile Money Transfer",
+    "name": "Telecel Mobile Money Transfer",
     "ussdCode": "*170#","steps": [
       {
         "position": 0,
