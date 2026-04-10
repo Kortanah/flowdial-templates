@@ -39,45 +39,4 @@
       }
     ]
   }
-
-  {
-    "name": "Telecel Mobile Money Transfer",
-    "ussdCode": "*170#","steps": [
-      {
-        "position": 0,
-        "type": "AUTO",
-        "actionValue": "1",
-        "matchText": "Transfer Money"
-      },
-      {
-        "position": 1,
-        "type": "INPUT",
-        "variableKey": "recipient_number",
-        "matchText": "Enter Number"
-      },
-      {
-        "position": 2,
-        "type": "INPUT",
-        "variableKey": "amount",
-        "matchText": "Enter Amount"
-      },
-      {
-        "position": 3,
-        "type": "MANUAL",
-        "matchText": "Enter Secret PIN to Confirm"
-      }
-    ],
-    "variables": [
-      {
-        "key": "recipient_number",
-        "label": "Who are you?",
-        "inputType": "PHONE"
-      },
-      {
-        "key": "amount",
-        "label": "How much (GHS)?",
-        "inputType": "NUMBER"
-      }
-    ]
-  }
 ]
